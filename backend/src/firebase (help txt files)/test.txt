@@ -1,0 +1,35 @@
+const FireStoreClient = require('./firestoreClient')
+
+const burgerHub = {
+    docName: 'burguerHut',
+    location: 'LA'
+};
+
+const burgerHubReview ={
+    docName: 'firstReview',
+    comments: 'That is so good!!!'
+}
+
+const burgerHubSecondReview ={
+    docName: 'review2',
+    comments: 'I have ate something better'
+}
+
+const save = async () => {
+    await FireStoreClient.save('restaurants', burgerHub);
+}
+
+const saveSubCollection = async () => {
+    await FireStoreClient.saveSubCollection('restaurants', burgerHub.docName, 'review', burgerHubReview)
+}
+
+const saveByPath = async() => {
+    await FireStoreClient.saveByPath('restaurants/burguerHut/review/secondReview', burgerHubSecondReview)
+}
+
+const getByPath = async() => {
+    const result = await FireStoreClient.getByPath('restaurants/burguerHut/review/secondReview');
+    console.log(result)
+}
+
+getByPath()
