@@ -1,5 +1,5 @@
 
-Veja o trabalho na íntegra no repositório da utfpr http://repositorio.roca.utfpr.edu.br/ como DISPOSITIVO VESTÍVEL PARA PROTEÇÃO INDIVIDUAL ATIVA COM MONITORAMENTO VIA WEB
+Veja o trabalho na íntegra no repositório da UTFPR http://repositorio.roca.utfpr.edu.br/ como DISPOSITIVO VESTÍVEL PARA PROTEÇÃO INDIVIDUAL ATIVA COM MONITORAMENTO VIA WEB
 <h1>INTRODUÇÃO </h1>
 
 
